@@ -13,8 +13,7 @@ public class BinarySearch {
             if (number[mid] == target) { // FOUND
                 return mid;
             }
-
-            if (number[mid] < target) { // Go Right
+            else if (number[mid] < target) { // Go Right
                 start = mid + 1;
             } else { // Go Left
                 end = mid - 1;
